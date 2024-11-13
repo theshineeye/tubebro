@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автовоспроизведение звука</title>
+</head>
+<body>
+
+<h1>Нажмите кнопку, чтобы включить звук</h1>
+<button onclick="playSound()">Воспроизвести звук</button>
+
+<!-- Используем ваш файл 'myaudio.mp3' -->
+<audio id="myAudio" src="myaudio.mp3"></audio>
+
+<script>
+    function playSound() {
+        var audio = document.getElementById("myAudio");
+        audio.play();
+    }
+</script>
+
+</body>
+</html>
